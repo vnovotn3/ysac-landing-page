@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>YSAC App</title>
+		<meta
+			name="description"
+			content="Stay connected, informed, and inspired at your YSA conference – easily access schedule, contacts, event info, chats, notifications, and more."
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+			rel="stylesheet"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="assets/css/main.css" id="styles" />
+		<link
+			rel="shortcut icon"
+			href="https://ysac.eu/favicon.ico?6be8a6b"
+			type="image/png"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<nav
+				class="navbar py-3 navbar-expand-lg navbar-light bg-white border-bottom"
+			>
+				<div class="container">
+					<a class="navbar-brand" href="/">
+						<img src="assets/img/icon.svg" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar"
+						aria-controls="offcanvasNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end"
+						tabindex="-1"
+						id="offcanvasNavbar"
+						aria-labelledby="offcanvasNavbarLabel"
+					>
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+								YSAC App
+							</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<div class="d-flex flex-grow-1 justify-content-lg-center">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="#about">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#features">Features</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#reviews">Reviews</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#download">Download</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contact">Pricing</a>
+									</li>
+								</ul>
+							</div>
+							<div class="navbar-nav ml-auto gap-3 pt-4 pt-lg-0">
+								<li class="nav-item">
+									<a class="nav-link button-outline" href="/">Log In</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link button" href="#contact">Contact Us</a>
+								</li>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-12 col-lg-6 d-flex flex-column justify-content-center"
+					>
+						<p class="cap" data-aos="fade-up">ALL YOU NEED IN ONE PLACE</p>
+						<h1 class="title" data-aos="fade-up" data-aos-delay="200">
+							Mobile App for your YSA Conference
+						</h1>
+						<p class="subtitle" data-aos="fade-up" data-aos-delay="400">
+							Stay connected, informed, and inspired at your YSA conference –
+							easily access schedule, contacts, event info, chats,
+							notifications, and more.
+						</p>
+						<div
+							class="buttons mt-5 pt-2"
+							data-aos="fade-up"
+							data-aos-delay="600"
+						>
+							<a href="#contact" class="btn">Register Event</a>
+							<a href="#download" class="btn-outline">Download App</a>
+						</div>
+					</div>
+					<div class="col-6 mockups">
+						<img
+							src="assets/img/mockup1.png"
+							class="mockup-1"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						/>
+						<img
+							src="assets/img/mockup2.png"
+							class="mockup-2"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						/>
+						<img
+							src="assets/img/mockup3.png"
+							class="mockup-3"
+							data-aos="fade-up"
+							data-aos-delay="600"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<h2>What is YSAC App?</h2>
+				<div class="text pt-4">
+					<p>
+						The YSAC App is designed to <b>simplify the organization</b> of YSA
+						conferences.
+					</p>
+					<div class="row">
+						<div class="col-12 col-md-6 pt-4">
+							<h3 class="pb-3">For Participants:</h3>
+							<p>
+								We offer a mobile app for both Android and iOS, providing key
+								conference details such as
+								<b>schedules, contact lists, chats, files, and more</b>. These
+								features are aimed at enhancing the overall conference
+								experience. See the
+								<a href="#features">full list of features</a>.
+							</p>
+						</div>
+						<div class="col-12 col-md-6 pt-4">
+							<h3 class="pb-3">For Organizers:</h3>
+							<p>
+								We provide a Web Admin platform that helps
+								<b>manage registrations, send emails and notifications</b>, and
+								control the content displayed on the mobile app. The Web Admin
+								streamlines the registration process with
+								<b>customizable registration forms and a participant list</b>
+								that can easily be embedded into your conference website. See
+								the <a href="#admin">full list of features</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features" id="features">
+			<div class="container pb-5">
+				<h2 class="pb-4">Mobile App Features</h2>
+				<div class="pt-5 splide" id="carousel-1">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div class="img-cont">
+									<img src="assets/img/phone1.png" />
+									<img src="assets/img/phone2.png" />
+								</div>
+								<h3 class="pt-5 pb-2">Conference Info</h3>
+								<p>
+									Your one-stop hub for all essential participant details.
+									Admins can easily add custom links, create informative pages,
+									and showcase key contacts for conference organizers.
+								</p>
+							</li>
+							<li class="splide__slide">
+								<div class="img-cont">
+									<img src="assets/img/phone3.png" />
+									<img src="assets/img/phone4.png" />
+								</div>
+								<h3 class="pt-5 pb-2">Chats & Notifications</h3>
+								<p>
+									The app includes an announcements chat, where only admins can
+									post updates, along with multiple group chats based on
+									conference activities. Users receive notifications for new
+									messages and upcoming scheduled events.
+								</p>
+							</li>
+							<li class="splide__slide">
+								<div class="img-cont">
+									<img src="assets/img/phone5.png" />
+									<img src="assets/img/phone6.png" />
+								</div>
+								<h3 class="pt-5 pb-2">Schedule & Orientation</h3>
+								<p>
+									A key feature of the app is the schedule, which displays daily
+									activities with details on time, locations, and additional
+									descriptions. A venue map can also be included alongside the
+									schedule.
+								</p>
+							</li>
+							<li class="splide__slide">
+								<div class="img-cont">
+									<img src="assets/img/phone7.png" />
+									<img src="assets/img/phone8.png" />
+								</div>
+								<h3 class="pt-5 pb-2">Groups & Contacts</h3>
+								<p>
+									During the conference, participants can join or be assigned to
+									various groups. A chat is automatically created for each
+									group, allowing members to see and interact with others in
+									their group. Each participant has a profile with the option to
+									display their contact information.
+								</p>
+							</li>
+							<li class="splide__slide">
+								<div class="img-cont">
+									<img src="assets/img/phone9.png" />
+									<img src="assets/img/phone10.png" />
+								</div>
+								<h3 class="pt-5 pb-2">Profile & Files</h3>
+								<p>
+									Users can customize their profile by selecting which contact
+									information to share and optionally adding social media links.
+									Admins can also upload and share various conference materials
+									with participants through the Files tab.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="splide__arrows">
+						<button class="splide__arrow splide__arrow--prev">
+							<ion-icon name="chevron-back-outline"></ion-icon>
+						</button>
+						<button class="splide__arrow splide__arrow--next">
+							<ion-icon name="chevron-forward-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonies" id="reviews">
+			<div class="container">
+				<div class="d-flex flex-column align-items-center">
+					<h2>Testimonies</h2>
+					<p class="subtitle">
+						See what users are saying about the app. The app received a rating
+						of <b>4.5/5</b> during the last conference.
+					</p>
+				</div>
+
+				<div class="row pt-5">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="review">
+							<p>
+								"I really appreciate how easy it is to navigate and find
+								everything within the app. Thank you for putting this together!"
+							</p>
+							<div class="stars">
+								<ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="review">
+							<p>
+								"It made it easier for me and the participants to access the
+								schedule and be notified about everything. The app is very
+								user-friendly!"
+							</p>
+							<div class="stars">
+								<ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="review">
+							<p>
+								"A convenient list of participants, along with the schedule and
+								resort map with me all the time."
+							</p>
+							<div class="stars">
+								<ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star" class="empty"></ion-icon>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="review">
+							<p>
+								"The entire app feels incredibly smooth and well thought out."
+							</p>
+							<div class="stars">
+								<ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="review">
+							<p>
+								"As an IT myself - I can say that from a user experince it is
+								very well structured and functional."
+							</p>
+							<div class="stars">
+								<ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star" class="empty"></ion-icon>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="review">
+							<p>
+								"It was a great tool and help in organizing the day's
+								activities."
+							</p>
+							<div class="stars">
+								<ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon
+								><ion-icon name="star"></ion-icon>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="download" id="download">
+			<div class="container d-flex justify-content-center">
+				<div class="max-width">
+					<div class="row">
+						<div class="col-12 col-md-6 mb-5 mt-5">
+							<h2>Download YSAC App</h2>
+							<p class="subtitle">
+								See what users are saying about the app. The app received a
+								rating of
+								<b>4.5/5</b> during the last conference.
+							</p>
+							<div class="buttons mt-5 pt-2">
+								<a
+									href="https://apps.apple.com/cz/app/ysac/id6667118903"
+									target="_blank"
+									class="btn-outline"
+									><ion-icon name="logo-apple"></ion-icon
+									><span>App Store</span></a
+								>
+								<a
+									href="https://play.google.com/store/apps/details?id=eu.ysac.app"
+									target="_blank"
+									class="btn-outline"
+									><ion-icon name="logo-google-playstore"></ion-icon
+									><span>Google Play</span></a
+								>
+							</div>
+						</div>
+						<div
+							class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+						>
+							<div class="qr">
+								<img src="assets/img/qr.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pricing" id="contact">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-12 col-md-6 py-4 d-flex flex-column align-items-stretch"
+					>
+						<h2>Pricing</h2>
+						<div class="box mt-4 me-md-3">
+							<h3 class="pb-2">5€/participant</h3>
+							<p>
+								Our standard price is 5 EUR per participant, but we're happy to
+								work with you to find the best pricing option for your needs.
+							</p>
+							<p>
+								We offer full access to our Web Admin for managing registrations
+								and all Mobile App features prior to the conference. Unless
+								otherwise requested, access to both the Web Admin and Mobile App
+								data will remain available for 3 months following the event's
+								conclusion.
+							</p>
+							<p>
+								<b>We're all about flexibility</b>, and we're always ready to
+								tailor <b>custom solutions</b>, including personalized
+								registration processes, to fit your specific needs. 😊
+							</p>
+							<p>Don't hesitate to reach out!</p>
+						</div>
+					</div>
+					<div
+						class="col-12 col-md-6 py-4 d-flex flex-column align-items-stretch"
+					>
+						<h2>Contact Us</h2>
+						<div class="box mt-4 ms-md-3">
+							<h3 class="pb-2">Register your conference</h3>
+							<form class="d-flex flex-column flex-grow-1">
+								<div class="row">
+									<div class="col">
+										<input type="text" name="name" placeholder="Name" />
+									</div>
+									<div class="col">
+										<input type="email" name="email" placeholder="Email" />
+									</div>
+								</div>
+								<input type="text" name="subject" placeholder="Subject" />
+								<textarea name="message" placeholder="Message"></textarea>
+								<div class="mt-4">
+									<input type="submit" class="btn" value="Send message" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-us" id="about-us">
+			<div class="container d-flex flex-column align-items-center">
+				<h2 class="pb-3">About Us</h2>
+				<div class="row pt-5">
+					<div class="col-12 col-md-6 mb-3 mt-3">
+						<div class="box">
+							<img src="assets/img/profile1.png" />
+							<div class="text">
+								<h3>Vašek Šindýlek</h3>
+								<p class="subtitle">Full-Stack Web Developer</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									Vivamus ac leo pretium faucibus. Proin mattis lacinia justo.
+									Vivamus luctus egestas leo. AliquamLorem ipsum dolor sit amet,
+									consectetuer adipiscing elit. Vivamus ac leo pretium faucibus.
+									Proin mattis lacinia justo. Vivamus luctus egestas leo.
+									Aliquam
+								</p>
+								<div class="links">
+									<a href="https://sinda.cz/" target="_blank">Website</a>
+									<a
+										href="https://www.facebook.com/vasek.sindylek"
+										target="_blank"
+										>Facebook</a
+									>
+									<a href="mailto:vasek.sindylek@gmail.com"
+										>vasek.sindylek@gmail.com</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3 mt-3">
+						<div class="box">
+							<img src="assets/img/profile2.png" />
+							<div class="text">
+								<h3>Vojta Novotný</h3>
+								<p class="subtitle">Mobile App Developer + UI Designer</p>
+								<p>
+									A member of the Church from the Czech Republic, he enjoys
+									coding, graphic design, and accompanying his sisters on the
+									piano. Passionate about church history and all things
+									gospel-related, he also loves running and being outdoors with
+									family and friends, feeling most alive when hiking in the
+									mountains.
+								</p>
+								<div class="links">
+									<a
+										href="https://www.linkedin.com/in/vojta-novotn%C3%BD-83134277/"
+										target="_blank"
+										>LinkedIn</a
+									>
+									<a
+										href="https://www.facebook.com/vojta.nnovotny"
+										target="_blank"
+										>Facebook</a
+									>
+									<a href="mailto:vnovotn3@gmail.com">vnovotn3@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="border-top">
+			<div class="container d-flex justify-content-center">
+				<span>© 2024 YSAC app</span>
+				<a href="">Cookie settings</a>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<script>
+			var breakpoints = {
+				small: 576,
+				medium: 768,
+				large: 992,
+				xlarge: 1200,
+				xxlarge: 1600,
+			};
+			const splideOptions1 = {
+				type: "loop",
+				perPage: 2,
+				perMove: 1,
+				gap: "2rem",
+				padding: "10%",
+				breakpoints: {
+					[breakpoints.large]: {
+						perPage: 1,
+						perMove: 1,
+					},
+				},
+			};
+
+			var splide = new Splide("#carousel-1", splideOptions1);
+			splide.mount();
+
+			$(document).ready(function () {
+				AOS.init();
+			});
+		</script>
+	</body>
+</html>
